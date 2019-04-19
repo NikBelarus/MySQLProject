@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="classes.Workers">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <BorderPane prefHeight="500.0" prefWidth="1000.0">
+            <top>
+                <MenuBar>
+                    <menus>
+                        <Menu mnemonicParsing="false" text="Файл">
+                            <items>
+                                <MenuItem id="add" mnemonicParsing="false" onAction="#add" text="Добавить" />
+                                <MenuItem id="count" mnemonicParsing="false" onAction="#countPeople" text="Посчитать" />
+                                <MenuItem id="update" mnemonicParsing="false" onAction="#show" text="Обновить" />
+                            </items>
+                        </Menu>
+                    </menus>
+                </MenuBar>
+            </top>
+            <center>
+                <TableView fx:id="myTable" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                    <columns>
+                        <TableColumn fx:id="name" prefWidth="183.00001525878906" text="Имя" />
+                        <TableColumn fx:id="adress" prefWidth="200.0" text="Улица" />
+                        <TableColumn fx:id="city" prefWidth="207.0" text="Город" />
+                    </columns>
+                </TableView>
+            </center></BorderPane>
+    </children>
+</GridPane>
